@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Summary Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Document Summary Assistant</h1>
+    <form id="uploadForm">
+      <label for="fileInput">Upload your document (PDF/Image):</label>
+      <input type="file" id="fileInput" name="document" accept=".pdf,.jpg,.jpeg,.png" required>
+      <button type="submit">Generate Summary</button>
+    </form>
+    <div id="loading" style="display: none;">Processing your document...</div>
+    <div id="summaryContainer" style="display: none;">
+      <h2>Summary:</h2>
+      <p id="summary"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
